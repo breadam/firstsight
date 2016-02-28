@@ -1,0 +1,249 @@
+<html>
+  <head>
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic,300,300italic,100italic,100&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='animate.css' rel='stylesheet' type='text/css'>
+    <style>
+      body,html{
+        padding:0;
+        margin:0;
+        font-family:Lato;
+        color:#444;
+        width:100%;
+        height:100%;
+      }
+
+      .fs .cta{
+        background-color:#eee;
+      }
+
+      .fs .desc{
+        position:relative;
+        background-color:#fff;
+        width:100%;
+        height:100%;
+      }
+
+      .fs .desc > div{
+
+        display:inline-block;
+
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+
+        text-align:center;
+        font-weight:700;
+        font-size:20px;
+        z-index:20;
+      }
+
+      .fs .desc h1{
+        font-size:72px;
+      }
+
+      .fs .wow{
+        position:absolute;
+      }
+
+      .fs .pl{
+
+        top:50px;
+        left:calc(50% - 200px);
+        width:400px;
+      }
+
+      .fs .pr{
+        bottom:50px;
+        right:calc(50% - 200px);
+        width:400px;
+      }
+
+      .fs .qm1{
+        top:150px;
+        right:45px;
+        width:110px;
+      }
+
+      .fs .qm2{
+        bottom:150px;
+        right:92px;
+        width:150px;
+      }
+
+      .fs .qm3{
+        bottom:150px;
+        left:70px;
+        width:160px;
+      }
+
+      .fs .qm4{
+        top:150px;
+        left:90px;
+        width:80px;
+      }
+
+      .fs .qm5{
+        top:50px;
+        left:150px;
+        width:120px;
+      }
+
+      .fs .qm6{
+        top:50px;
+        right:150px;
+        width:180px;
+      }
+
+      .fs .qm7{
+        bottom:50px;
+        left:120px;
+        width:120px;
+      }
+
+      .fs .qm8{
+        position:absolute;
+        bottom:50px;
+        right:200px;
+        width:80px;
+      }
+
+      .fs .table{
+        position:absolute;
+        top:calc(50% - 314px);
+        left:calc(50% - 500px);
+        width:1000px
+      }
+
+      .fs .footer{
+
+        height:32px;
+
+        background-color:#333;
+
+        color:#fff;
+        text-align:center;
+        line-height:32px;
+      }
+
+      .fs a{
+
+        margin-left:16px;
+
+        color:#ccc;
+        text-decoration: none;
+      }
+
+      .fs a:hover{
+        color:blue;
+      }
+
+      .fs form{
+        width:300px;
+      }
+
+      .fs input, .fs textarea{
+        margin-top:10px;
+      }
+
+    </style>
+
+  </head>
+  <body class='fs'>
+
+    <div class='desc'>
+      <div>
+        <h1> firstsight </h1>
+        <button onclick='bla();'> Join </button>
+        <h4> scroll down </h4>
+      </div>
+    </div>
+
+    <div class='desc'>
+      <div>
+        Katılımcı sayısını erkek-kadın
+        eşit olacak şekilde belirliyoruz.
+      </div>
+
+      <img src='images/people.png' data-wow-delay='400ms' class='pl wow bounceInLeft'>
+      <img src='images/people.png' data-wow-delay='400ms' class='pr wow bounceInRight'>
+    </div>
+
+    <div class='desc'>
+      <div>
+        Katılımcılar kadınlar ve erkekler karşılıklı
+        olacak şekilde masalarına oturıyorlar ve zil
+        sesi ile karşılarındaki katılımcı ile sohbet
+        etmeye başlıyorlar.
+      </div>
+      <img src='images/table2.jpg' class='table wow slideInUp'>
+    </div>
+
+    <div class='desc'>
+      <div>
+        (Burada detaya girmiyorum, nasıl olduğunu gelip tecrübe etmelisiniz)
+      </div>
+      <img src='images/qm.png' data-wow-delay='400ms' class='qm qm1 wow fadeIn'/>
+      <img src='images/qm.png' data-wow-delay='900ms' class='qm qm2 wow fadeIn'/>
+      <img src='images/qm.png' data-wow-delay='200ms' class='qm qm3 wow fadeIn'/>
+      <img src='images/qm.png' data-wow-delay='300ms' class='qm qm4 wow fadeIn'/>
+      <img src='images/qm.png' data-wow-delay='400ms' class='qm qm5 wow fadeIn'/>
+      <img src='images/qm.png' data-wow-delay='700ms' class='qm qm6 wow fadeIn'/>
+      <img src='images/qm.png' data-wow-delay='600ms' class='qm qm7 wow fadeIn'/>
+      <img src='images/qm.png' data-wow-delay='800ms'  class='qm qm8 wow fadeIn'/>
+    </div>
+
+    <div class='desc'>
+      <div>
+        <form>
+          <input type='text' placeholder='Ad Soyad'>
+          <input type='text' placeholder='Telefon'>
+          <input type='text' placeholder='Eposta'>
+          <input type='text' placeholder='Telefon'>
+          <input type='text' placeholder='Yaş'>
+          <input type='text' placeholder='Facebook'>
+          <input type='text' placeholder='Instagram'>
+          <input type='text' placeholder='Bizi nereden buldunuz?'>
+          <textarea placeholder='İlgi alanlarınız'></textarea>
+        </form>
+        <button> Submit </button>
+      </div>
+    </div>
+    <div class='footer'>
+      <a href='#'> Basın </a>
+      <a href='#'> Koşullar </a>
+      <a href='#'> İletişim </a>
+      <a href='#'> vs </a>
+    </div>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/0.1.12/jquery.scrollify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+      var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset:0,
+        mobile:true,
+        live:true,
+        callback:function(box) {
+        },
+        scrollContainer: null
+      });
+      wow.init();
+
+      $.scrollify({
+        section : ".desc",
+      });
+
+      function bla(){
+        $.scrollify.move("#6");
+      }
+
+    </script>
+  </body>
+</html>
