@@ -4,19 +4,23 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic,300,300italic,100italic,100&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Marck+Script|Grand+Hotel|Stalemate|Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='animate.css' rel='stylesheet' type='text/css'>
     <style>
       body,html{
         padding:0;
         margin:0;
         font-family:Lato;
-        color:#444;
         width:100%;
         height:100%;
       }
 
-      .fs .cta{
-        background-color:#eee;
+      .fs #hero{
+        background-image:url(images/bg.gif);
+        background-position:center center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        text-align:center;
       }
 
       .fs .desc{
@@ -26,7 +30,7 @@
         height:100%;
       }
 
-      .fs .desc > div{
+      .fs .desc > .centered{
 
         display:inline-block;
 
@@ -36,13 +40,48 @@
         transform: translate(-50%,-50%);
 
         text-align:center;
-        font-weight:700;
         font-size:20px;
         z-index:20;
       }
 
-      .fs .desc h1{
-        font-size:72px;
+      .fs .desc > .top,
+      .fs .desc > .bottom{
+        width:100%;
+        height:100px;
+        line-height:100px;
+        text-align:center;
+        background-color:#111;
+      }
+
+      .fs .desc > .top{
+        font-size:24pt;
+        font-family:Raleway, cursive;
+        letter-spacing: 12px;
+        color:#eee;
+      }
+
+      .fs .desc > .bottom{
+        position:absolute;
+        bottom:0;
+      }
+
+      .fs .cta {
+        font-family:Raleway, cursive;
+        letter-spacing: 4px;
+        width:90px;
+        height:90px;
+        /*padding:8px 24px;*/
+        background-color:#F70A41;
+        border:none;
+        border-radius:45px;
+        font-size:24px;
+        color:#eee;
+        margin-top:460px;
+
+      }
+
+      .fs .cta:hover {
+        background-color:rgba(1,1,1,0.3);
       }
 
       .fs .wow{
@@ -148,21 +187,23 @@
       .fs input, .fs textarea{
         margin-top:10px;
       }
-
     </style>
 
   </head>
   <body class='fs'>
 
-    <div class='desc'>
-      <div>
-        <h1> firstsight </h1>
-        <h4> scroll down </h4>
+    <div id='hero' class='desc'>
+      <div class='top'>
+        firstsight
       </div>
+      <div class='centered'>
+        <button class='cta' onclick='bla();'> katıl </button>
+      </div>
+      <div class='bottom'></div>
     </div>
 
     <div class='desc'>
-      <div>
+      <div class='centered'>
         Katılımcı sayısını erkek-kadın
         eşit olacak şekilde belirliyoruz.
       </div>
@@ -172,7 +213,7 @@
     </div>
 
     <div class='desc'>
-      <div>
+      <div class='centered'>
         Katılımcılar kadınlar ve erkekler karşılıklı
         olacak şekilde masalarına oturıyorlar
       </div>
@@ -180,7 +221,7 @@
     </div>
 
     <div class='desc'>
-      <div>
+      <div class='centered'>
         (Burada detaya girmiyorum, nasıl olduğunu gelip tecrübe etmelisiniz)
       </div>
       <img src='images/qm.png' data-wow-delay='400ms' class='qm qm1 wow fadeIn'/>
@@ -194,7 +235,7 @@
     </div>
 
     <div class='desc'>
-      <div>
+      <div class='centered'>
         <form>
           <input type='text' placeholder='Ad Soyad'>
           <input type='text' placeholder='Telefon'>
@@ -209,6 +250,7 @@
         <button> Submit </button>
       </div>
     </div>
+
     <div class='footer'>
       <a href='#'> Basın </a>
       <a href='#'> Koşullar </a>
@@ -221,6 +263,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/0.1.12/jquery.scrollify.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script>
+
       var wow = new WOW({
         boxClass: 'wow',
         animateClass: 'animated',
