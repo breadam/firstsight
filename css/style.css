@@ -18,23 +18,7 @@ body,html{
   position:relative;
   width:100%;
   height:100%;
-  color:#F70A41;
   background-color:#222;
-}
-
-.fs .desc > .centered{
-
-  display:inline-block;
-
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-
-  text-align:center;
-  font-size:24pt;
-  letter-spacing: 12px;
-  z-index:20;
 }
 
 .fs .desc > .top,
@@ -48,7 +32,6 @@ body,html{
 
 .fs .desc > .top{
   font-size:24pt;
-  font-family:Raleway, cursive;
   letter-spacing: 12px;
   color:#eee;
 }
@@ -58,34 +41,56 @@ body,html{
   bottom:0;
 }
 
-.fs .cta {
-  font-family:Raleway, cursive;
+.fs .desc > .centered{
+
+  display:inline-block;
+
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+  z-index:20;
+  color:#eee;
   letter-spacing: 4px;
-  width:90px;
-  height:90px;
+  text-align:center;
+}
+
+.fs .desc > .centered.text{
+  text-align:left;
+}
+
+.fs .desc > .centered.form > div{
+
+  float:left;
+  display:inline;
+  text-align:left;
+}
+
+.fs .desc > .centered.form > div:first-child{
+
+  margin-right:40px;
+}
+
+.fs .button{
+  letter-spacing: 4px;
   background-color:#F70A41;
   border:none;
-  border-radius:45px;
-  font-size:24px;
-  color:#eee;
   cursor:pointer;
   outline:none;
+  color:#eee;
+}
+
+.fs .cta {
+  font-size:24px;
+  width:90px;
+  height:90px;
+  border-radius:45px;
   transform:translateY(-50%);
 }
 
 .fs .cta:hover {
   background-color:#CF0232;
-}
-
-.fs .footer{
-
-  height:32px;
-
-  background-color:#333;
-
-  color:#fff;
-  text-align:center;
-  line-height:32px;
 }
 
 .fs a{
@@ -105,11 +110,12 @@ body,html{
   background-color:#333;
   padding:8px 12px;
   outline:none;
-  border:1px solid #666;
+  border:none;
   border-radius: 2px;
   font-weight: bold;
   color:#eee;
   margin-top:10px;
+  resize:none;
 }
 
 .fs input:focus, .fs textarea:focus{
@@ -122,6 +128,19 @@ body,html{
     color:#CF0232;
 }
 
+.fs .age{
+  width:80px;
+}
+
+.fs .likes{
+  height:119px;
+  width:100%;
+}
+
 .fs .submit{
   margin-top:20px;
+  padding:10px 20px;
+  border-radius:22px;
+  font-size:18px;
+  clear:both;
 }
