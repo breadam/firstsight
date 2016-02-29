@@ -1,3 +1,21 @@
+@media (max-width:961px){
+  .desktop{
+    display:none;
+  }
+  body::after{
+    content:'Responsive değil daha. Desktop, laptop dene. Ekranı büyüt vs';
+  }
+}
+
+@media (max-height:600px){
+  .desktop{
+    display:none;
+  }
+  body::after{
+    content:'Responsive değil daha. Desktop, laptop dene. Ekranı büyüt vs';
+  }
+}
+
 body,html{
   padding:0;
   margin:0;
@@ -15,10 +33,14 @@ body,html{
 }
 
 .fs .desc{
+
   position:relative;
+
   width:100%;
   height:100%;
+
   background-color:#222;
+  overflow:hidden;
 }
 
 .fs .desc > .top,
@@ -60,10 +82,11 @@ body,html{
   text-align:left;
 }
 
-.fs .desc > .centered.form > div{
+.fs .desc > .centered.form{
+  width:700px;
+}
 
-  float:left;
-  display:inline;
+.fs .desc > .centered.form > div{
   text-align:left;
 }
 
@@ -142,5 +165,4 @@ body,html{
   padding:10px 20px;
   border-radius:22px;
   font-size:18px;
-  clear:both;
 }

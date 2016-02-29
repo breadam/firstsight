@@ -9,67 +9,68 @@
 
   </head>
   <body class='fs'>
+    <div class='desktop'>
+      <div id='hero' class='desc' data-name='firstsight'>
+        <div class='top'>
+          firstsight
+        </div>
+        <div class='bottom'>
+          <button class='cta button' onclick='bla();'> Katıl </button>
+        </div>
+      </div>
 
-    <div id='hero' class='desc'>
-      <div class='top'>
-        firstsight
+      <div class='desc' data-name='nasil'>
+        <div class='top'>
+          Lorem ipsum
+        </div>
+        <div class='centered text'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Phasellus in purus non justo iaculis blandit. Sed at enim nunc.
+          Ut vel nisl libero. Cras consectetur egestas velit laoreet accumsan.
+          Suspendisse tempor pharetra dictum. Pellentesque habitant morbi tristique
+          senectus et netus et malesuada fames ac turpis egestas. Mauris a libero
+          venenatis, tempus metus in, vehicula erat. Vivamus et risus in quam laoreet
+          congue ultricies ac nunc. Nunc quis accumsan metus, eget ullamcorper velit.
+          Sed rutrum dui in accumsan facilisis. Curabitur vel iaculis enim. Nullam ante
+          metus, consectetur non viverra sit amet, volutpat quis velit. Pellentesque eget
+          tempor neque, ac interdum lorem. Ut ac odio vel urna eleifend ultricies.
+        </div>
+        <div class='bottom'>
+        </div>
       </div>
-      <div class='bottom'>
-        <button class='cta button' onclick='bla();'> Katıl </button>
-      </div>
-    </div>
 
-    <div class='desc'>
-      <div class='top'>
-        Lorem ipsum
-      </div>
-      <div class='centered text'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Phasellus in purus non justo iaculis blandit. Sed at enim nunc.
-        Ut vel nisl libero. Cras consectetur egestas velit laoreet accumsan.
-        Suspendisse tempor pharetra dictum. Pellentesque habitant morbi tristique
-        senectus et netus et malesuada fames ac turpis egestas. Mauris a libero
-        venenatis, tempus metus in, vehicula erat. Vivamus et risus in quam laoreet
-        congue ultricies ac nunc. Nunc quis accumsan metus, eget ullamcorper velit.
-        Sed rutrum dui in accumsan facilisis. Curabitur vel iaculis enim. Nullam ante
-        metus, consectetur non viverra sit amet, volutpat quis velit. Pellentesque eget
-        tempor neque, ac interdum lorem. Ut ac odio vel urna eleifend ultricies.
-      </div>
-      <div class='bottom'>
-      </div>
-    </div>
+      <div class='desc' data-name='katilin'>
+        <div class='top'>
+        </div>
+        <div class='centered form'>
 
-    <div class='desc'>
-      <div class='top'>
-      </div>
-      <div class='centered form'>
+          <div>
 
-        <div>
+            <input type='text' placeholder='Adınız'>
+            <input class='age' type='text' placeholder='Yaşınız'>
+            <textarea class='likes' placeholder='İlgi alanlarınız' rows='6'></textarea>
 
-          <input type='text' placeholder='Adınız Soyadınız'>
-          <input class='age' type='text' placeholder='Yaşınız'>
-          <textarea class='likes' placeholder='İlgi alanlarınız' rows='6'></textarea>
+          </div>
+
+          <div>
+
+            <input type='text' placeholder='Telefon'>
+            <input type='text' placeholder='Eposta'></br>
+            <input type='text' placeholder='Facebook'>
+            <input type='text' placeholder='Instagram'></br>
+            <input type='text' placeholder='Bizi nereden buldunuz?'>
+
+          </div>
+
+          <button class='submit button'> Gönder </button>
 
         </div>
-
-        <div>
-
-          <input type='text' placeholder='Telefon'>
-          <input type='text' placeholder='Eposta'></br>
-          <input type='text' placeholder='Facebook'>
-          <input type='text' placeholder='Instagram'></br>
-          <input type='text' placeholder='Bizi nereden buldunuz?'>
-
+        <div class='bottom'>
+          <a href='#'> Basın </a>
+          <a href='#'> Koşullar </a>
+          <a href='#'> İletişim </a>
+          <a href='#'> vs </a>
         </div>
-
-        <button class='submit button'> Gönder </button>
-
-      </div>
-      <div class='bottom'>
-        <a href='#'> Basın </a>
-        <a href='#'> Koşullar </a>
-        <a href='#'> İletişim </a>
-        <a href='#'> vs </a>
       </div>
     </div>
 
@@ -92,6 +93,7 @@
 
       $.scrollify({
         section : ".desc",
+        sectionName : 'name'
       });
 
       function bla(){
